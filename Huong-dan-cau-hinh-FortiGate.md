@@ -1,32 +1,12 @@
 # Hướng dẫn cấu hình FortiGate cơ bản
 
-**IT-Documentation · Network · Tài liệu tham khảo có hình ảnh**
-
-> **Phạm vi:** Mẫu hướng dẫn cho mạng thử nghiệm có một đường Internet, FortiGate chạy NAT/Route và NAT trong firewall policy. Không áp dụng nguyên trạng cho hệ thống đang có SD-WAN, HA hoặc Central SNAT.
->
-> **Ảnh minh họa:** Lấy từ tài liệu công khai của Fortinet, không phải ảnh chụp thiết bị của bạn. Tên cổng, IP và giao diện trong ảnh có thể khác ví dụ bên dưới. Đây không phải cấu hình đã được kiểm thử trên thiết bị thực tế của bạn.
->
-> **Trước khi thao tác:** Sao lưu cấu hình và giữ một đường quản trị dự phòng. Không đưa mật khẩu, khóa API hoặc file cấu hình chứa thông tin bí mật lên repository công khai.
-
-## Mục lục
-
-- [1. Mô hình và thông số ví dụ](#mo-hinh)
-- [2. Truy cập thiết bị](#truy-cap)
-- [3. Cấu hình WAN nhận IP tự động](#wan)
-- [4. Cấu hình LAN và DHCP](#lan-dhcp)
-- [5. Kiểm tra đường ra Internet](#default-route)
-- [6. Tạo policy LAN ra Internet](#policy)
-- [7. Kiểm tra kết nối](#kiem-tra)
-- [8. Cách quản lý ảnh trong tài liệu](#hinh-anh)
-
----
 
 <a id="mo-hinh"></a>
 ## 1. Mô hình và thông số ví dụ
 
 ![Sơ đồ kết nối mạng nội bộ qua FortiGate ra Internet](https://uploads-us-west-2.insided.com/fortinet-en/attachment/kb_19934_1.png)
 
-*Hình 1. Mô hình LAN → FortiGate → Internet. [Nguồn ảnh: Fortinet][nguon-tong-quan].*
+*Hình 1. Mô hình LAN → FortiGate → Internet. 
 
 Ví dụ trong bài giả định modem/router phía trước **đã có Internet và đang cấp DHCP**. Đây không phải hướng dẫn quay PPPoE trực tiếp.
 
