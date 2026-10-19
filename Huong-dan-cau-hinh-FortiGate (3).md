@@ -1,34 +1,10 @@
 # Hướng dẫn cấu hình FortiGate cơ bản
-
-**IT-Documentation · Network · Tài liệu tham khảo có hình ảnh**
-
-> **Phạm vi:** Mẫu hướng dẫn cho mạng thử nghiệm có một đường Internet, FortiGate chạy NAT/Route và NAT trong firewall policy. Không áp dụng nguyên trạng cho hệ thống đang có SD-WAN, HA hoặc Central SNAT.
->
-> **Ảnh minh họa:** Lấy từ tài liệu công khai của Fortinet và bài mẫu InternReport, không phải ảnh chụp thiết bị của bạn. Tên cổng, IP và giao diện trong ảnh có thể khác ví dụ bên dưới. Đây không phải cấu hình đã được kiểm thử trên thiết bị thực tế của bạn.
->
-> **Trước khi thao tác:** Sao lưu cấu hình và giữ một đường quản trị dự phòng. Không đưa mật khẩu, khóa API hoặc file cấu hình chứa thông tin bí mật lên repository công khai.
-
-> **Cách đọc ảnh:** Ảnh nằm ngay dưới bước liên quan. Khung đỏ hoặc vùng tô màu trong ảnh nguồn giúp nhận biết vị trí thao tác. Đọc bảng thông số trong bài, không sao chép IP, tên cổng hoặc cấu hình khác trong ảnh.
-
-## Mục lục
-
-- [1. Mô hình và thông số ví dụ](#mo-hinh)
-- [2. Truy cập thiết bị](#truy-cap)
-- [3. Cấu hình WAN nhận IP tự động](#wan)
-- [4. Cấu hình LAN và DHCP](#lan-dhcp)
-- [5. Kiểm tra đường ra Internet](#default-route)
-- [6. Tạo policy LAN ra Internet](#policy)
-- [7. Kiểm tra kết nối](#kiem-tra)
-- [8. Cách quản lý ảnh trong tài liệu](#hinh-anh)
-
----
-
 <a id="mo-hinh"></a>
 ## 1. Mô hình và thông số ví dụ
 
 ![Sơ đồ kết nối mạng nội bộ qua FortiGate ra Internet](https://uploads-us-west-2.insided.com/fortinet-en/attachment/kb_19934_1.png)
 
-*Hình 1. Mô hình LAN → FortiGate → Internet. [Nguồn ảnh: Fortinet][nguon-tong-quan].*
+*Hình 1. Mô hình LAN → FortiGate → Internet. 
 
 Ví dụ trong bài giả định modem/router phía trước **đã có Internet và đang cấp DHCP**. Đây không phải hướng dẫn quay PPPoE trực tiếp.
 
@@ -53,8 +29,7 @@ Kết nối máy tính vào mạng quản trị, mở địa chỉ HTTPS đã đ
 
 ![Trang đăng nhập Web GUI FortiGate trong bài mẫu](https://raw.githubusercontent.com/hiiamtu16/InternReport/043bdcd189c99fe0b11615a7d470e4fc421be96e/Picture%20/Network%20/C%E1%BA%A5u%20h%C3%ACnh%20Firewall%20Fortinet%20FortiGate-300E/login_web.png)
 
-*Hình 2. Ô Username, Password và nút Login. Thông báo "Your session has expired" thuộc ảnh nguồn, không phải lỗi trên thiết bị của bạn. [Nguồn ảnh: InternReport][nguon-mau].*
-
+*Hình 2. Ô Username, Password và nút Login. Thông báo "Your session has expired" thuộc ảnh nguồn, không phải lỗi trên thiết bị của bạn.
 
 **Không mặc định Default Gateway của máy tính luôn là IP quản trị FortiGate.** Khi chưa biết địa chỉ quản trị, kiểm tra hồ sơ bàn giao hoặc dùng kết nối console được cho phép.
 
@@ -69,8 +44,7 @@ Vào **Network → Interfaces**, chỉnh sửa cổng nối modem/router, trong 
 
 ![Network Interfaces và vị trí chọn cổng được khoanh đỏ](https://raw.githubusercontent.com/hiiamtu16/InternReport/265780e8ccbfa4c8fe45a07d777526fa013accef/Picture%20/Network%20/C%E1%BA%A5u%20h%C3%ACnh%20Firewall%20Fortinet%20FortiGate-300E/choosePort.png)
 
-*Hình 3. Mở Network → Interfaces rồi chọn cổng nối modem/router. Khung đỏ là chú thích có sẵn trong ảnh mẫu. Không sao chép IP, Loopback hoặc danh sách dịch vụ quản trị trong ảnh. [Nguồn ảnh: InternReport][nguon-mau].*
-
+*Hình 3. Mở Network → Interfaces rồi chọn cổng nối modem/router. Khung đỏ là chú thích có sẵn trong ảnh mẫu. Không sao chép IP, Loopback hoặc danh sách dịch vụ quản trị trong ảnh. 
 
 | Mục | Thiết lập |
 | --- | --- |
@@ -84,7 +58,7 @@ Nhấn **OK**, kiểm tra trạng thái kết nối và IP đã nhận. Không g
 
 ![Giao diện cấu hình DHCP client và tự nhận default gateway trên FortiGate](https://uploads-us-west-2.insided.com/fortinet-en/attachment/50103i162E67AB8363BCC4.png)
 
-*Hình 4. Các trường DHCP và default gateway trên cổng WAN. IP trong ảnh thuộc ví dụ của Fortinet, không phải IP cần nhập. [Nguồn ảnh][nguon-wan].*
+*Hình 4. Các trường DHCP và default gateway trên cổng WAN. IP trong ảnh thuộc ví dụ của Fortinet, không phải IP cần nhập. 
 
 ---
 
@@ -108,7 +82,7 @@ Chỉ bật DHCP trên mạng thử nghiệm chưa có máy chủ DHCP khác. Đ
 
 ![Cấu hình địa chỉ LAN và DHCP Server trên FortiGate](https://uploads-us-west-2.insided.com/fortinet-en/attachment/67499iD572F94ABD10AF3B.png)
 
-*Hình 5. Vị trí các trường IP, DHCP Server, gateway và DNS. Ảnh dùng một mạng khác; nhập thông số theo bảng ví dụ hoặc kế hoạch mạng của bạn. [Nguồn ảnh][nguon-dhcp].*
+*Hình 5. Vị trí các trường IP, DHCP Server, gateway và DNS. Ảnh dùng một mạng khác; nhập thông số theo bảng ví dụ hoặc kế hoạch mạng của bạn. 
 
 ---
 
@@ -121,7 +95,7 @@ Với WAN DHCP và **Retrieve default gateway from server** đã bật, FortiGat
 
 ![Ví dụ tạo default route trên FortiGate với đích 0.0.0.0/0](https://uploads-us-west-2.insided.com/fortinet-en/attachment/kb_19934_4.png)
 
-*Hình 6. Ví dụ default route cho WAN IP tĩnh. Không sao chép gateway `172.25.176.1` trong ảnh vào hệ thống của bạn. [Nguồn ảnh][nguon-tong-quan].*
+*Hình 6. Ví dụ default route cho WAN IP tĩnh. Không sao chép gateway `172.25.176.1` trong ảnh vào hệ thống của bạn. 
 
 DNS của chính FortiGate được cấu hình tại **Network → DNS**. Phân biệt phần này với DNS cấp cho máy tính qua DHCP. [Tham khảo][nguon-tong-quan].
 
@@ -151,8 +125,7 @@ Tạo address object kiểu subnet tên `LAN_NET`, chứa mạng ví dụ `192.1
 
 ![Các mục NAT Use Outgoing Interface Address và Log Allowed Traffic trong firewall policy](https://uploads-us-west-2.insided.com/fortinet-en/attachment/79856i3CCE1F41FC768FD6.png)
 
-*Hình 7. Vị trí NAT → Use Outgoing Interface Address và Log Allowed Traffic → All Sessions. Ảnh chỉ minh họa hai nhóm tùy chọn này; các giá trị policy và Security Profiles khác trong ảnh không thay thế bảng cấu hình phía trên. [Nguồn ảnh: Fortinet][nguon-anh-logging].*
-
+*Hình 7. Vị trí NAT → Use Outgoing Interface Address và Log Allowed Traffic → All Sessions. Ảnh chỉ minh họa hai nhóm tùy chọn này; các giá trị policy và Security Profiles khác trong ảnh không thay thế bảng cấu hình phía trên.
 
 ---
 
@@ -170,13 +143,12 @@ nslookup example.com
 
 ![Kết quả ipconfig với IPv4 Subnet Mask và Default Gateway được khoanh đỏ](https://raw.githubusercontent.com/hiiamtu16/InternReport/3c10797db448de5b8658e702e81872fe4fd88dbf/Picture%20/Network%20/C%E1%BA%A5u%20h%C3%ACnh%20Firewall%20Fortinet%20FortiGate-300E/CheckIP.png)
 
-*Hình 8. Vị trí IPv4 Address, Subnet Mask và Default Gateway trong kết quả ipconfig. Ảnh dùng mạng quản trị của tác giả nguồn; với ví dụ trong bài, gateway LAN là 192.168.50.1. [Nguồn ảnh: InternReport][nguon-mau].*
+*Hình 8. Vị trí IPv4 Address, Subnet Mask và Default Gateway trong kết quả ipconfig. Ảnh dùng mạng quản trị của tác giả nguồn; với ví dụ trong bài, gateway LAN là 192.168.50.1.
 
 
 ![Ví dụ kiểm tra IP và ping với khung đỏ chỉ lệnh](https://raw.githubusercontent.com/hiiamtu16/InternReport/0c6f287b84b49d833d5d3903f2c52117110ef991/Picture%20/Network%20/C%E1%BA%A5u%20h%C3%ACnh%20Firewall%20Fortinet%20FortiGate-300E/ping.png)
 
-*Hình 9. Cách đọc dòng Reply from và thống kê mất gói. Đây là kết quả trong bài nguồn, không phải kết quả kiểm tra mạng của bạn. Dùng các lệnh trong khối lệnh phía trên; phần tracert -d bị thiếu đích ở cuối ảnh không phải bước cần làm. [Nguồn ảnh: InternReport][nguon-mau].*
-
+*Hình 9. Cách đọc dòng Reply from và thống kê mất gói. Đây là kết quả trong bài nguồn, không phải kết quả kiểm tra mạng của bạn. Dùng các lệnh trong khối lệnh phía trên; phần tracert -d bị thiếu đích ở cuối ảnh không phải bước cần làm. 
 
 Đồng thời mở thử một trang HTTPS. Không kết luận mất Internet chỉ dựa vào ping thất bại, vì ICMP có thể bị chặn.
 
@@ -200,44 +172,7 @@ Xem **Log & Report → Forward Traffic** để đối chiếu lưu lượng vớ
 - [ ] Cấu hình được sao lưu sau khi kiểm tra.
 - [ ] Ảnh và tài liệu đăng công khai không chứa bí mật.
 
----
-
 <a id="hinh-anh"></a>
-## 8. Cách quản lý ảnh trong tài liệu
-
-Bản này sử dụng **9 đường dẫn ảnh trực tuyến**: 5 ảnh từ tài liệu Fortinet và 4 ảnh từ [bài mẫu InternReport][nguon-mau]. Các đường dẫn đã được mở kiểm tra ngày **19/10/2026**. Bạn không cần tạo thư mục `images` để dùng bản này.
-
-Ảnh chưa được lưu thành file trong repository của bạn. Việc hiển thị cần kết nối Internet và phụ thuộc nơi lưu ảnh của nguồn; nếu nguồn di chuyển hoặc xóa ảnh, đường dẫn có thể ngừng hoạt động.
-
-Khi có ảnh chụp của riêng bạn, nên che thông tin bí mật, tải ảnh lên cùng repository rồi dùng đường dẫn tương đối. Với tài liệu nằm trong `Network`, đường dẫn `images/ten-anh.png` trỏ tới file nằm trong `Network/images`. [Hướng dẫn đường dẫn ảnh của GitHub][nguon-github].
-
-**Ảnh trong bài được giữ nguyên từ nguồn tham khảo; không được trình bày như ảnh chụp hệ thống của tác giả repository.**
 
 ---
 
-## Tài liệu tham khảo
-
-- [InternReport / hiiamtu16 — Bài mẫu và nguồn ảnh đăng nhập, chọn cổng, ipconfig, ping][nguon-mau].
-- [Fortinet — Ảnh vị trí NAT và Log Allowed Traffic trong policy][nguon-anh-logging].
-
-- [Fortinet — Kết nối Internet, interfaces, route và policy][nguon-tong-quan].
-- [Fortinet — Cấu hình DHCP client trên interface][nguon-wan].
-- [Fortinet — Cấu hình DHCP server][nguon-dhcp].
-- [Fortinet — Cấu hình cơ bản][nguon-co-ban].
-- [Fortinet — Firewall policy][nguon-policy].
-- [Fortinet — NAT trong policy][nguon-nat].
-- [Fortinet — Ping và traceroute][nguon-ping].
-- [GitHub — Đường dẫn tương đối và ảnh trong Markdown][nguon-github].
-
-[nguon-tong-quan]: https://community.fortinet.com/fortigate-3/technical-tip-fortigate-getting-started-configure-interfaces-and-policies-to-access-internet-97554
-[nguon-wan]: https://community.fortinet.com/fortigate-3/technical-tip-how-to-configure-a-fortigate-interface-to-use-dhcp-94965
-[nguon-dhcp]: https://community.fortinet.com/fortigate-3/technical-tip-how-to-configure-fortigate-as-dhcp-server-99355
-[nguon-co-ban]: https://docs.fortinet.com/document/fortigate/7.4.0/administration-guide/777334/basic-configuration
-[nguon-model]: https://docs2.fortinet.com/document/fortigate/7.4.0/administration-guide/954635/getting-started
-[nguon-policy]: https://docs.fortinet.com/document/fortigate/7.4.1/administration-guide/656084/firewall-policy
-[nguon-nat]: https://docs.fortinet.com/document/%20fortigate/6.0.0/cookbook/667291/creating-a-policy
-[nguon-ping]: https://docs.fortinet.com/document/fortigate/7.2.10/administration-guide/982816/running-ping-and-traceroute
-[nguon-github]: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes
-
-[nguon-mau]: https://github.com/hiiamtu16/InternReport/blob/a28188b20d8c30e7902a66458aec424b595628fe/Network/C%E1%BA%A5u%20h%C3%ACnh%20Firewall%20Fortinet.md%20FortiGate-300E.md
-[nguon-anh-logging]: https://community.fortinet.com/fortigate-3/technical-tip-forward-traffic-logs-are-not-displayed-memory-logs-99968
