@@ -31,8 +31,6 @@ Sau khi chọn xong, Lightshot sẽ hiển thị **khung vùng chụp** cùng c�
 
 ![Chọn vùng chụp bằng Lightshot](https://st.prntscr.com/2025/12/17/0541/img/media-screen-1.jpg)
 
-*Ảnh minh họa giao diện chọn vùng chụp của Lightshot.*
-
 ---
 
 ## 3. Chỉnh sửa ảnh ngay trên Lightshot
@@ -211,5 +209,3 @@ Nếu có, hãy chụp lại vùng nhỏ hơn hoặc che thông tin trước khi
 > **Hủy chụp:** `Esc`
 
 ---
-
-*Nguồn hình minh họa: website chính thức của Lightshot — app.prntscr.com.*
