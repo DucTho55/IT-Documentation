@@ -1,9 +1,5 @@
 # Tìm hiểu cơ bản về thiết bị mạng
-
-Tài liệu này giúp người mới làm quen với các thiết bị thường gặp trong hệ thống mạng doanh nghiệp: **Modem/ONT, Router, Switch, Access Point, Firewall, Controller, VPN Gateway, Load Balancer và IDS/IPS**.
-
 ---
-
 
 ## 1. Modem / ONT
 
