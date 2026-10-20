@@ -1,5 +1,4 @@
 # Tìm hiểu cơ bản về thiết bị mạng
----
 
 ## 1. Modem / ONT
 
