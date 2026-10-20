@@ -4,21 +4,6 @@ Tài liệu này giúp người mới làm quen với các thiết bị thườn
 
 ---
 
-## Mục lục
-
-1. [Modem / ONT](#1-modem--ont)
-2. [Router](#2-router)
-3. [Switch](#3-switch)
-4. [Access Point](#4-access-point)
-5. [Firewall](#5-firewall)
-6. [Wireless Controller](#6-wireless-controller)
-7. [VPN Gateway](#7-vpn-gateway)
-8. [Load Balancer](#8-load-balancer)
-9. [IDS / IPS](#9-ids--ips)
-10. [Mô hình mạng doanh nghiệp cơ bản](#10-mô-hình-mạng-doanh-nghiệp-cơ-bản)
-11. [Lộ trình học](#11-lộ-trình-học)
-
----
 
 ## 1. Modem / ONT
 
@@ -458,7 +443,7 @@ flowchart LR
 
 ---
 
-## Ghi nhớ nhanh
+
 
 > **Router định tuyến - Switch kết nối - AP phát Wi-Fi - Firewall bảo vệ.**
 
