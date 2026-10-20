@@ -1,7 +1,5 @@
 # Hướng dẫn sử dụng draw.io (diagrams.net)
 
-> Tài liệu hướng dẫn nhanh cách sử dụng **draw.io / diagrams.net** để vẽ sơ đồ, lưu file và xuất ảnh.
-
 ## 1. Giao diện chính
 
 Sau khi mở draw.io, giao diện thường gồm:
