@@ -201,6 +201,4 @@ Một sơ đồ đơn giản sau khi hoàn thành có thể trông như sau:
 
 ---
 
-### Ghi chú
 
-Ảnh minh họa trong tài liệu này được lấy từ tài liệu hướng dẫn chính thức của draw.io và dùng để minh họa thao tác sử dụng phần mềm.
