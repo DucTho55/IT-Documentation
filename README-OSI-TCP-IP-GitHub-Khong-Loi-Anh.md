@@ -1,10 +1,5 @@
 # Mục đích và hoạt động cơ bản của các giao thức trong mô hình OSI và TCP/IP
 
-> Tài liệu này dùng **Mermaid Diagram** trực tiếp trong Markdown.  
-> Không cần thư mục `images/`, không dùng link ảnh bên ngoài nên tránh lỗi ảnh không hiển thị trên GitHub.
-
----
-
 ## 1. Mô hình OSI
 
 Mô hình **OSI (Open Systems Interconnection)** gồm 7 tầng, dùng để mô tả quá trình dữ liệu được truyền từ thiết bị này sang thiết bị khác.
@@ -414,28 +409,3 @@ SSH        = Quản trị từ xa an toàn
 
 ---
 
-## 7. Ưu điểm của file này khi đưa lên GitHub
-
-Chỉ cần upload:
-
-```text
-README.md
-```
-
-Không cần:
-
-```text
-images/
-*.png
-*.jpg
-*.svg
-```
-
-Các sơ đồ được GitHub dựng trực tiếp từ Mermaid nên không gặp lỗi kiểu:
-
-```text
-Ảnh không tồn tại
-Sai tên file
-Sai đường dẫn images/
-Link ảnh ngoài bị chết
-```
