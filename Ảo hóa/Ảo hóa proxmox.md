@@ -1,0 +1,20 @@
+<img width="1481" height="896" alt="Screenshot 2026-10-28 144136" src="https://github.com/user-attachments/assets/9e60f5ba-b3c7-4b2d-bb4a-6b7fa2acddd2" />
+<img width="1898" height="936" alt="Screenshot 2026-10-28 144119" src="https://github.com/user-attachments/assets/468214b8-a19f-46c3-b1a4-d41fbe45c1be" />
+<img width="1221" height="884" alt="Screenshot 2026-10-28 135822" src="https://github.com/user-attachments/assets/b16e0300-8a8e-464f-98c1-b6145790a34a" />
+<img width="1920" height="2560" alt="1793173456366_209957388276498341_8600050012151822869_4c4e51f7cdd7ecabc0ed692844a53312" src="https://github.com/user-attachments/assets/d78be3c7-006e-4449-85e7-84d3d21db327" />
+<img width="1920" height="2560" alt="1793173456359_209957388276498341_8600050012151822869_398823d98e0b61c0d0a0bb3533c008b7" src="https://github.com/user-attachments/assets/09f99122-9ab9-40b5-be7d-a0c1cc117442" />
+<img width="1920" height="2560" alt="1793173456351_209957388276498341_8600050012151822869_598a6422cbb679013a7216052abd9c3f" src="https://github.com/user-attachments/assets/d9cd698d-eb14-4dbe-890b-cf686698b737" />
+<img width="1920" height="2560" alt="1793173456344_209957388276498341_8600050012151822869_a284e991fc4bdce77860f0caf83bb6df" src="https://github.com/user-attachments/assets/069567fd-edad-472e-b8e7-667e39723d77" />
+<img width="1920" height="2560" alt="1793173456337_209957388276498341_8600050012151822869_c4782dea0fa3d5750dfaf1486863cfa5" src="https://github.com/user-attachments/assets/acc38b62-a430-4612-91dc-f6805de31e89" />
+<img width="1920" height="2560" alt="1793173456329_209957388276498341_8600050012151822869_1d98b9498e357f597a35844e149805f1" src="https://github.com/user-attachments/assets/9c9df007-ec5a-4d9d-a6e6-0e0f7bc87f92" />
+<img width="1920" height="2560" alt="1793173456322_209957388276498341_8600050012151822869_0ff58d17a6fe8ce6751fd7cf369399db" src="https://github.com/user-attachments/assets/5405eac7-d34d-4351-b905-05be3bc75451" />
+<img width="1920" height="2560" alt="1793173456314_209957388276498341_8600050012151822869_f928065c8315a6bbc1ff13e8b102447e" src="https://github.com/user-attachments/assets/62a90d32-181b-4a23-876c-be8ea48da930" />
+<img width="1920" height="2560" alt="1793173456306_209957388276498341_8600050012151822869_c55c050860113d4514fa457b07908097" src="https://github.com/user-attachments/assets/1f88bea2-d5a0-4c40-830e-138c9883e74c" />
+<img width="1920" height="2560" alt="1793173456298_209957388276498341_8600050012151822869_431ce348d7c6ed98d9f7b214d769f994" src="https://github.com/user-attachments/assets/1cea45e1-5949-4ef3-821d-f07b55a593b0" />
+<img width="1920" height="2560" alt="1793173456289_209957388276498341_8600050012151822869_936bc7804a9469e598656db5eccb8897" src="https://github.com/user-attachments/assets/3334e47a-38bc-490f-abdd-6ddbb1905596" />
+<img width="1920" height="2560" alt="1793173456280_209957388276498341_8600050012151822869_70427d1b929b3d21b934ce8ec9624876" src="https://github.com/user-attachments/assets/5665406e-e83a-4b80-bf7a-8f2731af7377" />
+<img width="1920" height="2560" alt="1793173456270_209957388276498341_8600050012151822869_e353f59c0517fcbd0d773110b704ee48" src="https://github.com/user-attachments/assets/ca257e50-3d95-4199-ba36-7d066f5711d6" />
+<img width="1920" height="2560" alt="1793173456258_209957388276498341_8600050012151822869_3aa42222ea2d25561cae48d416058a71" src="https://github.com/user-attachments/assets/aa00e93e-bdf7-4603-b723-f0766a3f6454" />
+<img width="1920" height="2560" alt="1793173456245_209957388276498341_8600050012151822869_a9a526fdfd92e6b7f2b23b3a4ff8dabf" src="https://github.com/user-attachments/assets/c82edb65-d10d-4a14-b986-992b549ea910" />
+<img width="1920" height="2560" alt="1793173456230_209957388276498341_8600050012151822869_441f27efb5a7e1f78ed13256cf49c32f" src="https://github.com/user-attachments/assets/6dc53fee-8e9f-480d-8949-e4adfdd16aa8" />
+<img width="1920" height="2560" alt="1793173456197_209957388276498341_8600050012151822869_1e661158f6b5f398968385272f24a557" src="https://github.com/user-attachments/assets/af4e2dbe-c4f8-4ea3-b853-1198028ea752" />
