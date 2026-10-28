@@ -9,7 +9,6 @@
 - Tối ưu dung lượng lưu trữ.
 - Giảm nguy cơ gián đoạn khi một ổ đĩa bị hỏng.
 
-> **Lưu ý:** RAID không thay thế cho Backup.
 
 ---
 
